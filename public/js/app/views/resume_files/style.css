@@ -1,6 +1,6 @@
 body {
+	height: 100%;
 	font-family: 'Source Code Pro', monospace;
-	display: flex !important;
 }
 
 html {
@@ -10,15 +10,6 @@ html {
 p {
 	font-family: 'Source Code Pro', monospace !important;
 }
-
-li {
-	list-style-position: inherit !important;
-}
-
-/*.container {
-	display: flex;
-	justify-content: center;
-}*/
 
 #main {
 	display: flex;
@@ -178,52 +169,7 @@ li {
 	width: 100px;
 }
 
-.resume_container {
-	max-width: 900px;
-	margin: 50px auto 100px auto;
-}
 
-#resume {
-	margin-top: 50px;
-}
-
-#resume .section_title {
-	border-bottom: 1px solid #ccc;
-	margin-top: 50px;
-}
-
-#resume .position {
-	margin: 40px 0;
-}
-
-#resume .education {
-	margin: 20px 0;
-}
-
-#resume .position_title, .education_title {
-	font-size: 16px;
-	font-weight: bold;
-	display: inline-block;
-}
-
-#resume .position_location {
-	display: inline-block;
-	/*color: #777;*/
-	/*font-style: italic;*/
-	border-left: 2px solid #444;
-	padding-left: 10px;
-	margin-left: 5px;
-}
-
-#resume .position_description {
-	font-size: 14px;
-	margin-top: 15px;
-	line-height: 16px;
-}
-
-#resume li {
-	margin-bottom: 10px;
-}
 
  Chrome, Safari, Opera 
 @-webkit-keyframes mymove {

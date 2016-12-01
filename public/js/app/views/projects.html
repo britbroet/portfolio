@@ -1,0 +1,14 @@
+<nav-bar></nav-bar>
+
+<div class="text-center" style="margin: 100px 0;">
+	<button ng-click="projectView = 'tiled'" class="btn btn-info">Tile View</button>
+	<button ng-click="projectView = 'list'" class="btn btn-default">List View</button>
+</div>
+
+<div ng-if="projectView == 'list'">
+	<projects-list></projects-list>
+</div>
+
+<div ng-if="projectView == 'tiled'">
+	<projects-tiled></projects-tiled>
+</div>

@@ -17,13 +17,7 @@ angular.module('PortfolioApp', ['ui.router','ui.bootstrap','ngMaterial','ngMessa
 		url: '/projects',
 		templateUrl: 'js/app/views/projects.html',
 		controller: 'ProjectsCtrl'
-	})
-	$stateProvider
-	.state('resume', {
-		url: '/resume',
-		templateUrl: 'js/app/views/resume.html',
-		controller: 'ResumeCtrl'
-	});;
+	});
 
 	$locationProvider.html5Mode(true);
 
