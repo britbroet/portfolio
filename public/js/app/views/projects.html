@@ -1,14 +1,44 @@
 <nav-bar></nav-bar>
 
-<div class="text-center" style="margin: 100px 0;">
-	<button ng-click="projectView = 'tiled'" class="btn btn-info">Tile View</button>
-	<button ng-click="projectView = 'list'" class="btn btn-default">List View</button>
+<div class="view_container">
+
+	<div class="projectsControls" style="display: flex; justify-content: space-between; align-items: center;">
+		<div class="view_container">
+			<div ng-click="projectView = 'tiled'" style="display: inline;" title="Tile view"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span></div>
+			<div ng-click="projectView = 'list'" style="display: inline;" title="List view"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span></div>
+		</div>
+		<div ng-init="showFilters = false">
+			<div class="filter_container">
+				<div ng-click="showFilters = !showFilters" style="display: inline;" title="Filter by technology used"><span class="glyphicon glyphicon-filter" aria-hidden="true"></span></div>
+			</div>
+		</div>
+	</div>
+
+
+
+	  <div class="filter_panel sample-show-hide" ng-show="showFilters">
+		  <label><input type="checkbox" ng-model="jquery">jquery</label><br/>
+		  <label>js: <input type="checkbox" ng-model="js"></label><br/>
+		  <label>angular: <input type="checkbox" ng-model="angular"></label><br/>
+	  </div>
+
+	<div ng-if="projectView === 'list'">
+		<projects-list></projects-list>
+	</div>
+
+	<div ng-if="projectView === 'tiled'" style="margin-bottom: 400px;">
+
+		<div id="projects_tiled">
+			<div ng-repeat="project in projects" data-ng-if="((!js) || (project.tech.javascript == js)) && ((!jquery) || (project.tech.jquery == jquery)) && ((!angular) || (project.tech.angular == angular))" style="margin-bottom: 20px;">
+					<div class="col-xs-12 col-sm-6 col-lg-4 project_tile">
+						<h2 class="project_title">{{project.name}} </h2>
+						<img ng-src="/img/roundup-screenshot.png" class="img-responsive">
+					</div>
+			</div>
+	</div>
+
+
 </div>
 
-<div ng-if="projectView == 'list'">
-	<projects-list></projects-list>
-</div>
 
-<div ng-if="projectView == 'tiled'">
-	<projects-tiled></projects-tiled>
-</div>
+

@@ -23,7 +23,13 @@ angular.module('PortfolioApp', ['ui.router','ui.bootstrap','ngMaterial','ngMessa
 		url: '/resume',
 		templateUrl: 'js/app/views/resume.html',
 		controller: 'ResumeCtrl'
-	});;
+	})
+	$stateProvider
+	.state('timeline', {
+		url: '/timeline',
+		templateUrl: 'js/app/views/timelineView.html',
+		controller: 'TimelineCtrl'
+	});
 
 	$locationProvider.html5Mode(true);
 

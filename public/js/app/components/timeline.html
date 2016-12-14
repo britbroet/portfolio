@@ -1,1 +1,32 @@
 <h1>Timeline</h1>
+
+
+  <div ng-repeat="(prop, ignored) in timeline.wines[0]" ng-init="timeline.filter[prop] = {}">
+    <h3>{{ prop }}</h3>
+    <div class="quarter" ng-repeat="value in timeline.getValuesFor(prop)">
+      <label>
+        <input type="checkbox" ng-model="timeline.filter[prop][value]" />
+        {{ value }}
+      </label>
+    </div>
+    <hr />
+  </div>
+  <div>
+    <h3>Available Wines</h3>
+    <div ng-repeat="wine in timeline.wines | filter:timeline.filterByProperties as filteredWines">
+      {{ wine.name }} <i>({{ wine.category }})</i>
+    </div>
+    <hr />
+    <b>Number of results: {{ filteredWines.length }}</b>
+  </div>
+<div>
+	cats: {{ cats }}
+</div>
+
+<div>
+	timeline.cats: {{ timeline.cats }}
+</div>
+
+<div ng-repeat="skill in timeline.skills">
+	{{skill.name}}, {{skill.category}}
+</div>

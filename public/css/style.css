@@ -43,15 +43,15 @@ li {
 }
 
 .navmenu {
-	margin: 20px 20px 0 0;
+	margin: 20px 0 100px 0;
 	display:flex;
 	justify-content: flex-end;
 	font-family: 'Source Code Pro', monospace;
 }
 
-.menu {
+.menuItem {
 	display: inline-block;
-	margin: 0 20px;
+	margin-left: 30px;
 }
 
 .menu a:active {
@@ -243,3 +243,26 @@ li {
 
 
 
+.quarter {
+  display: inline-block;
+  min-width: 25%;
+}
+
+
+
+
+
+/* OTHER TRY */
+
+.filter_panel {
+  border: 1px solid black;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.filter_panel .sample-show-hide {
+  transition: all linear 0.5s;
+}
+.filter_panel .sample-show-hide.ng-hide {
+  opacity: 0;
+}

@@ -3,12 +3,15 @@
   .component('resume', {
     templateUrl: 'js/app/components/resume.html',
     controller: Resume,
-    controllerAs: 'resume',
+    controllerAs: 'resume'
   });
 
-  function Resume($rootScope, $state, $location) {
+  function Resume($rootScope, $scope, $state, $location) {
     console.log('in resume controller');
+    var resume = this;
+
+    resume.testing = "does this work";
   }
 
-  Resume.$inject = ['$rootScope', '$state', '$location'];
+  Resume.$inject = ['$rootScope', '$scope', '$state', '$location'];
 })()
