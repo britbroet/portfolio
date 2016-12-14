@@ -5,7 +5,7 @@ angular.module('PortfolioApp')
         name: 'Simple jQuery Todo List (js and jquery) -svcs',
         git: 'https://britbroet.github.io/jquery-todo-list/',
         live: '',
-        image: '',
+        image: '/img/todolist-screenshot.png',
         tech: {
           angular: false,
           jquery: true,
@@ -16,7 +16,7 @@ angular.module('PortfolioApp')
         name: 'Progress Tracker (angular only) -svcs',
         git: 'https://britbroet.github.io/progress-tracker/',
         live: '',
-        image: '',
+        image: '/img/statuscheck-preview.png',
         tech: {
           angular: true,
           jquery: false,
@@ -27,7 +27,7 @@ angular.module('PortfolioApp')
         name: 'Roundup (js and angular) - svcs',
         git: 'https://britbroet.github.io/roundup/',
         live: '',
-        image: '',
+        image: '/img/roundup-screenshot.png',
         tech: {
           angular: true,
           jquery: false,
