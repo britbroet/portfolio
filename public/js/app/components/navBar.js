@@ -7,12 +7,12 @@
   });
 
 
-  function NavBar($rootScope, $state, $location) {
+  function NavBar($rootScope, $scope, $state, $location) {
     var navBar = this;
       console.log('in navbar controller');
 
   }
 
-  NavBar.$inject = ['$rootScope', '$state', '$location'];
+  NavBar.$inject = ['$rootScope', '$scope', '$state', '$location'];
 })()
 
