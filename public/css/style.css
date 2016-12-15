@@ -157,21 +157,27 @@ li {
 	padding: 20px;
 }
 
-
-
-#projects_tiled2 {
-	width: 90%;
-	margin: 0 auto;
-	position: relative;
-	display: flex;
-	justify-content: space-around;
+/*
+.project_tile.ng-enter {
+    transition: 0.8s linear all;
+    opacity: 0;
 }
 
-.project_tile2 {
-	width: 400px;
-	display: inline-block;
+.project_tile-init .fade-element-in.ng-enter {
+    opacity: 1;
 }
 
+.project_tile.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+.project_tile.ng-leave {
+    transition: 0.3s linear all;
+    opacity: 1;
+}
+.project_tile.ng-leave.ng-leave-active {
+    opacity: 0;
+}*/
 
 
 .logo_button img {
@@ -225,7 +231,7 @@ li {
 	margin-bottom: 10px;
 }
 
- Chrome, Safari, Opera 
+/* Chrome, Safari, Opera 
 @-webkit-keyframes mymove {
     from {left: 0px;}
     to {top: 0px;}
@@ -235,7 +241,7 @@ li {
     from {left: -100px;}
     to {top: -100px;}
 }
-
+*/
 
 
 
@@ -254,7 +260,7 @@ li {
 
 /* OTHER TRY */
 
-.filter_panel {
+/*.filter_panel {
   border: 1px solid black;
   margin-top: 10px;
   padding: 10px;
@@ -265,4 +271,48 @@ li {
 }
 .filter_panel .sample-show-hide.ng-hide {
   opacity: 0;
+}*/
+
+/*
+.filter_panel {
+  transition: 1s linear all;
+  -webkit-transition: 1s linear all;
+}
+
+.filter_panel.ng-enter {
+  opacity: 0;
+}
+
+.filter_panel.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+.filter_panel.ng-leave {
+  opacity: 1;
+}
+
+.filter_panel.ng-leave.ng-leave-active {
+  opacity: 0;
+}*/
+
+/* lfjsldfjslkjs */
+
+/*.animate-if {
+  background:white;
+  border:1px solid black;
+  padding:10px;
+}*/
+
+.animate-if.ng-enter, .animate-if.ng-leave {
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.animate-if.ng-enter,
+.animate-if.ng-leave.ng-leave-active {
+  opacity:0;
+}
+
+.animate-if.ng-leave,
+.animate-if.ng-enter.ng-enter-active {
+  opacity:1;
 }

@@ -1,4 +1,4 @@
-<nav-bar></nav-bar>
+<navigation></navigation>
 
 <div class="view_container">
 
@@ -29,13 +29,15 @@
 	<div ng-if="projectView === 'tiled'" style="margin-bottom: 400px;">
 
 		<div id="projects_tiled">
-			<div ng-repeat="project in projects" data-ng-if="((!js) || (project.tech.javascript == js)) && ((!jquery) || (project.tech.jquery == jquery)) && ((!angular) || (project.tech.angular == angular))" style="margin-bottom: 20px;">
+			<div ng-repeat="project in projects" class="animate-if" data-ng-if="((!js) || (project.tech.javascript == js)) && ((!jquery) || (project.tech.jquery == jquery)) && ((!angular) || (project.tech.angular == angular))" style="margin-bottom: 20px;">
 					<div class="col-xs-12 col-sm-6 col-lg-4 project_tile">
 						<h2 class="project_title">{{project.name}} </h2>
 						<img ng-src="{{project.image}}" class="img-responsive">
 					</div>
 			</div>
 	</div>
+
+
 
 
 </div>
