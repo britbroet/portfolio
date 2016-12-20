@@ -24,6 +24,35 @@
 		<div id="detail_view">
 
 
+<!--     <div ng-mouseenter="options=true" ng-mouseleave="options=false" class="icon">
+        <i ng-hide="options || checkbox">1</i>
+        <span ng-show="options || checkbox">2</span>
+    </div> -->
+
+
+
+	<div class="tile_project_container" ng-mouseenter="info=true" ng-mouseleave="info=false">
+		<!-- <div ng-hide="" class="tile_overlay"></div> -->
+		<div ng-if="info" id="tile_content">
+			<div class="title">
+				<img ng-src="/img/lasso-logo.png">
+				RoundUp
+			</div>
+			<div class="icon_container">
+				<div class="icon">
+					<a href="#" title="Github repo"><img ng-src="/img/github-white.png" width="30" style="margin-top: -10px;"></a>
+				</div>
+				<div class="icon">
+					<a href="#" title="Live version" style="color: #fff;"><span class="glyphicon glyphicon-globe"></span></a>
+				</div>
+				<div class="icon">
+					<a href="#" title="Project details" style="color: #fff;"><span class="glyphicon glyphicon-info-sign"></span></a>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+
 	<div class="project">
 
 		<h1 class="text-center" style="font-size: 60px; padding: 20px; font-family: 'Source Code Pro', monospace;">RoundUp</h1>

@@ -24,6 +24,18 @@ angular.module('PortfolioApp', ['ui.router','ui.bootstrap','ngMaterial', 'ngAnim
 		controller: 'ResumeCtrl'
 	})
 	$stateProvider
+	.state('about', {
+		url: '/about',
+		templateUrl: 'js/app/views/about.html',
+		controller: 'AboutCtrl'
+	})
+	$stateProvider
+	.state('contact', {
+		url: '/contact',
+		templateUrl: 'js/app/views/contact.html',
+		controller: 'ContactCtrl'
+	})
+	$stateProvider
 	.state('timeline', {
 		url: '/timeline',
 		templateUrl: 'js/app/views/timelineView.html',

@@ -9,7 +9,9 @@
 
   function Navigation($rootScope, $scope, $state, $location) {
     var navigation = this;
-      console.log('in navbar controller');
+      console.log('in navbar controller, location: ', location.pathname);
+
+    this.loc = location.pathname;
 
   }
 

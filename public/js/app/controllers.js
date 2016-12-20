@@ -16,14 +16,30 @@ angular.module('PortfolioApp')
 		projectView = selection;
 		console.log('projectView: ', projectView);
 	};
+ }])
+.controller('AboutCtrl', ['$scope', '$state', function($scope, $state) {
 
+	// $scope.projectView = 'tiled';
+	// $scope.filters = false;
+	// $scope.projects = ProjectService.AllProjects;
+
+	// $scope.viewStyle = function(selection) {
+	// 	console.log('clicked!');
+	// 	projectView = selection;
+	// 	console.log('projectView: ', projectView);
+	// };
  }])
 
 .controller('ResumeCtrl', ['$scope', '$state', function($scope, $state) {
 
 	$scope.testing = "this is in main controller";
 	
+}])
 
+.controller('ContactCtrl', ['$scope', '$state', function($scope, $state) {
+
+	$scope.testing = "this is in contact controller";
+	
 }])
 
 .controller('TimelineCtrl', ['$scope', '$state', function($scope, $state) {

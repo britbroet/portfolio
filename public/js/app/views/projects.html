@@ -1,26 +1,34 @@
 <navigation></navigation>
 
+<h1 class="page_title">Featured Projects</h1>
 <div class="view_container">
 
-	<div class="projectsControls" style="display: flex; justify-content: space-between; align-items: center;">
+	<div class="projects_controls">
 		<div class="view_container">
 			<div ng-click="projectView = 'tiled'" style="display: inline;" title="Tile view"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span></div>
 			<div ng-click="projectView = 'list'" style="display: inline;" title="List view"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span></div>
 		</div>
 		<div ng-init="showFilters = false">
 			<div class="filter_container">
-				<div ng-click="showFilters = !showFilters" style="display: inline;" title="Filter by technology used"><span class="glyphicon glyphicon-filter" aria-hidden="true"></span></div>
+				<div ng-click="showFilters = !showFilters" style="display: inline; margin-left: 40px;" title="Filter by technology used"><span class="glyphicon glyphicon-filter" aria-hidden="true"></span></div>
 			</div>
 		</div>
 	</div>
 
 
-
 	  <div class="filter_panel sample-show-hide" ng-show="showFilters">
-		  <label><input type="checkbox" ng-model="jquery">jquery</label><br/>
-		  <label>js: <input type="checkbox" ng-model="js"></label><br/>
-		  <label>angular: <input type="checkbox" ng-model="angular"></label><br/>
+	 		<button ng-click="ajax = !ajax" class="filter" ng-class="{active_filter: ajax, inactive_filter: !ajax}">AJAX</button>
+		  <button ng-click="angular = !angular" class="filter" ng-class="{active_filter: angular, inactive_filter: !angular}">AngularJS</button>
+		  <button ng-click="js = !js" class="filter" ng-class="{active_filter: js, inactive_filter: !js}">JavaScript</button>
+		  <button ng-click="jquery = !jquery" class="filter" ng-class="{active_filter: jquery, inactive_filter: !jquery}">jQuery</button>
+		  <button ng-click="mongodb = !mongodb" class="filter" ng-class="{active_filter: mongodb, inactive_filter: !mongodb}">MongoDB</button>
+		  <button ng-click="node = !node" class="filter" ng-class="{active_filter: node, inactive_filter: !node}">Node.js</button>
+		  <button ng-click="postgres = !postgres" class="filter" ng-class="{active_filter: postgres, inactive_filter: !postgres}">PostgreSQL</button>
+		  <button ng-click="rails = !rails" class="filter" ng-class="{active_filter: rails, inactive_filter: !rails}">Rails</button>
+
 	  </div>
+
+
 
 	<div ng-if="projectView === 'list'">
 		<projects-list></projects-list>
@@ -29,10 +37,15 @@
 	<div ng-if="projectView === 'tiled'" style="margin-bottom: 400px;">
 
 		<div id="projects_tiled">
-			<div ng-repeat="project in projects" class="animate-if" data-ng-if="((!js) || (project.tech.javascript == js)) && ((!jquery) || (project.tech.jquery == jquery)) && ((!angular) || (project.tech.angular == angular))" style="margin-bottom: 20px;">
-					<div class="col-xs-12 col-sm-6 col-lg-4 project_tile">
-						<h2 class="project_title">{{project.name}} </h2>
-						<img ng-src="{{project.image}}" class="img-responsive">
+			<div ng-repeat="project in projects | orderBy : 'position'" class="animate-if" data-ng-if="((!js) || (project.tech.javascript == js)) && ((!jquery) || (project.tech.jquery == jquery)) && ((!angular) || (project.tech.angular == angular)) && ((!ajax) || (project.tech.ajax == ajax)) && ((!mongodb) || (project.tech.mongodb == mongodb)) && ((!node) || (project.tech.node == node)) && ((!postgres) || (project.tech.postgres == postgres)) && ((!rails) || (project.tech.rails == rails))" style="margin-bottom: 20px;">
+					<div class="row">
+						<div class="col-xs-12 col-sm-4">
+							<img ng-src="{{project.image}}" class="img-responsive">
+						</div>
+						<div class="col-xs-12 col-sm-8">
+							<h2 class="project_title">{{project.name}}</h2>
+						</div>
+						
 					</div>
 			</div>
 	</div>
@@ -43,4 +56,4 @@
 </div>
 
 
-
+<footer></footer>

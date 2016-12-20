@@ -1,17 +1,22 @@
-<div class="navmenu">
-	<div class="xs-col-12 menuItem">
-		<a href="/resume">Resume</a>
+<div class="nav_container">
+	<div class="nav_title">
+		<span class="brit">Brit</span></br>Broetje
 	</div>
-	<div id="lala" class="xs-col-12 menuItem">
-		<a href="/timeline">Timeline</a>
+	<div class="navmenu">
+		<div class="xs-col-12 menuItem" ng-class="{menu_Item_active: navigation.loc === '/resume'}">
+			<a href="/resume">Resume</a>
+		</div>
+		<div id="lala" class="xs-col-12 menuItem" ng-class="{menu_Item_active: navigation.loc === '/timeline'}">
+			<a href="/timeline">Timeline</a>
+		</div>
+		<div class="xs-col-12 menuItem" ng-class="{menu_Item_active: navigation.loc === '/projects'}">
+			<a href="/projects">Projects</a>
+		</div>
+		<div class="xs-col-12 menuItem" ng-class="{menu_Item_active: navigation.loc === '/about'}">
+			<a href="/about" ng-click="navCurrent()">About</a>
+		</div>
+		<div class="xs-col-12 menuItem">
+			<a href="/contact">Contact</a>
+		</div>			
 	</div>
-	<div class="xs-col-12 menuItem">
-		<a href="/projects">Projects</a>
-	</div>
-	<div class="xs-col-12 menuItem">
-		<a href="/about">About</a>
-	</div>
-	<div class="xs-col-12 menuItem">
-		<a href="/contact">Contact</a>
-	</div>			
 </div>
