@@ -42,14 +42,8 @@ h2.intro_subtitle {
 	text-align: right;
 }
 
-/*.container {
-	display: flex;
-	justify-content: center;
-}*/
-
-.filter_panel {
-	display: flex;
-	justify-content: center;
+.filter_button {
+	display: inline-block;
 }
 
 .active_filter {
@@ -326,6 +320,7 @@ a.title, a.title:hover {
 
 #projects_tiled {
 	margin-top: 50px;
+	text-align: center;
 }
 
 #projects .project {
