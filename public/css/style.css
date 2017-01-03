@@ -531,6 +531,7 @@ h2.project_title {
 .copyright {
 	letter-spacing: 3px;
     font-size: .8em;
+    text-align: center;
 }
 
 .contact_logo {
