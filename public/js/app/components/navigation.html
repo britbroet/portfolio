@@ -2,21 +2,50 @@
 	<div class="nav_title">
 		<span class="brit">Brit</span></br>Broetje
 	</div>
-	<div class="navmenu">
-		<div class="xs-col-12 menuItem" ng-class="{menu_Item_active: navigation.loc === '/resume'}">
+	<div class="navmenu row hidden-xs">
+		<div class="col-xs-12 menuItem" ng-class="{menu_Item_active: navigation.loc === '/resume'}">
 			<a href="/resume">Resume</a>
 		</div>
 <!-- 		<div id="lala" class="xs-col-12 menuItem" ng-class="{menu_Item_active: navigation.loc === '/timeline'}">
 			<a href="/timeline">Timeline</a>
 		</div> -->
-		<div class="xs-col-12 menuItem" ng-class="{menu_Item_active: navigation.loc === '/projects'}">
+		<div class="col-xs-12 menuItem" ng-class="{menu_Item_active: navigation.loc === '/projects'}">
 			<a href="/projects">Projects</a>
 		</div>
-		<div class="xs-col-12 menuItem" ng-class="{menu_Item_active: navigation.loc === '/about'}">
+		<div class="col-xs-12 menuItem" ng-class="{menu_Item_active: navigation.loc === '/about'}">
 			<a href="/about" ng-click="navCurrent()">About</a>
 		</div>
-		<div class="xs-col-12 menuItem" ng-class="{menu_Item_active: navigation.loc === '/contact'}">
+		<div class="col-xs-12 menuItem" ng-class="{menu_Item_active: navigation.loc === '/contact'}">
+			<a href="/contact">Contact</a>
+		</div>			
+	</div>
+	<button class="btn btn-default hidden-sm hidden-md hidden-lg hidden-xl" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+	  <span class="glyphicon glyphicon-menu-hamburger">
+	</button>
+</div>
+
+
+
+
+<div class="collapse hidden-sm hidden-md hidden-lg hidden-xl" id="collapseExample">
+	<div class="navmenu_mobile">
+		<div class="menuItem" ng-class="{menu_Item_active: navigation.loc === '/resume'}">
+			<a href="/resume">Resume</a>
+		</div>
+<!-- 		<div id="lala" class="xs-col-12 menuItem" ng-class="{menu_Item_active: navigation.loc === '/timeline'}">
+			<a href="/timeline">Timeline</a>
+		</div> -->
+		<div class="menuItem" ng-class="{menu_Item_active: navigation.loc === '/projects'}">
+			<a href="/projects">Projects</a>
+		</div>
+		<div class="menuItem" ng-class="{menu_Item_active: navigation.loc === '/about'}">
+			<a href="/about" ng-click="navCurrent()">About</a>
+		</div>
+		<div class="menuItem" ng-class="{menu_Item_active: navigation.loc === '/contact'}">
 			<a href="/contact">Contact</a>
 		</div>			
 	</div>
 </div>
+
+
+
