@@ -217,9 +217,11 @@ h2.intro_subtitle {
 /* NEW CONTAINERS */
 
 .tile_project_container {
-    background-size: contain;
-    height: 400px;
-    width: 448px;
+    background-size: cover;
+/*    height: 400px;
+    width: 448px;*/
+    height: 360px;
+    width: 403px;
     margin: 30px;
     display: inline-block;
     border-top: 5px solid #0288AD;
@@ -227,7 +229,7 @@ h2.intro_subtitle {
 
 .tile_project_container:hover .tile_content {
 /*    background-image: url('/img/RoundUp1.png');*/
-    background-size: contain;
+    background-size: cover;
 /*    height: 440px;
     width: 500px;*/
     visibility: visible;
@@ -310,9 +312,9 @@ h2.intro_subtitle {
 
 
 .tile_content .title {
-	margin: 150px auto 10px auto;
+	margin: 120px auto 10px auto;
 	display: inline-block;
-	font-size: 4em !important;
+	font-size: 3em !important;
 	font-family: 'Roboto Condensed', sans-serif !important;
 }
 
@@ -359,6 +361,8 @@ a.title, a.title:hover {
 
 .hover_logo {
 	max-width: 40px;
+    max-height: 30px;
+    vertical-align: baseline;
 }
 
 #projects .details_container {
