@@ -19,6 +19,7 @@ angular.module('PortfolioApp')
  }])
 .controller('AboutCtrl', ['$scope', '$state', function($scope, $state) {
 
+	$('[data-toggle="popover"]').popover();
 	// $scope.projectView = 'tiled';
 	// $scope.filters = false;
 	// $scope.projects = ProjectService.AllProjects;
@@ -44,6 +45,11 @@ angular.module('PortfolioApp')
 
 .controller('TimelineCtrl', ['$scope', '$state', function($scope, $state) {
 	console.log('timline controller');
+
+}])
+
+.controller('TestingCtrl', ['$scope', '$state', function($scope, $state) {
+
 
 }]);
 

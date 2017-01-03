@@ -1,1 +1,28 @@
 using this as a placeholder to store some stuff for the moment:
+
+
+
+	<div id="projects_tiled">
+		<div ng-repeat="project in projects | orderBy : 'position'" class="animate-if" data-ng-if="((!js) || (project.tech.javascript == js)) && ((!jquery) || (project.tech.jquery == jquery)) && ((!angular) || (project.tech.angular == angular)) && ((!ajax) || (project.tech.ajax == ajax)) && ((!mongodb) || (project.tech.mongodb == mongodb)) && ((!node) || (project.tech.node == node)) && ((!postgres) || (project.tech.postgres == postgres)) && ((!rails) || (project.tech.rails == rails))" style="display: inline-block;">
+			<div id="{{project.id}}" class="tile_project_container" ng-mouseenter="info=true" ng-mouseleave="info=false">
+				<!-- <div ng-hide="" class="tile_overlay"></div> -->
+				<div ng-if="info" class="tile_content">
+					<div class="title">
+						<img ng-src="{{project.logo}}" class="hover_logo">
+						<span class="{{project.title_class}}">{{project.hover_title}}</span>
+					</div>
+					<div class="icon_container">
+						<div class="icon">
+							<a href="{{project.git}}" title="Github repo"><img ng-src="/img/github-white.png" width="30" style="margin-top: -10px; cursor: pointer;"></a>
+						</div>
+						<div class="icon">
+							<a href="{{project.live}}" title="Live version" style="color: #fff; cursor: pointer;"><span class="glyphicon glyphicon-globe"></span></a>
+						</div>
+						<div class="icon">
+							<a href="{{project.info}}" title="Project details" style="color: #fff; cursor: pointer;"><span class="glyphicon glyphicon-info-sign"></span></a>
+						</div>
+					</div>
+				</div>		
+			<!-- </div> -->
+		</div>
+	</div>

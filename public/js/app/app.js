@@ -18,6 +18,30 @@ angular.module('PortfolioApp', ['ui.router','ui.bootstrap','ngMaterial', 'ngAnim
 		controller: 'ProjectsCtrl'
 	})
 	$stateProvider
+	.state('todolist', {
+		url: '/projects/todolist',
+		templateUrl: 'js/app/views/projects/todolist.html',
+		controller: 'ProjectsCtrl'
+	})
+	$stateProvider
+	.state('statuscheck', {
+		url: '/projects/statuscheck',
+		templateUrl: 'js/app/views/projects/statuscheck.html',
+		controller: 'ProjectsCtrl'
+	})
+	$stateProvider
+	.state('vicegrip', {
+		url: '/projects/vicegrip',
+		templateUrl: 'js/app/views/projects/vicegrip.html',
+		controller: 'ProjectsCtrl'
+	})
+	$stateProvider
+	.state('roundup', {
+		url: '/projects/roundup',
+		templateUrl: 'js/app/views/projects/roundup.html',
+		controller: 'ProjectsCtrl'
+	})
+	$stateProvider
 	.state('resume', {
 		url: '/resume',
 		templateUrl: 'js/app/views/resume.html',
@@ -40,6 +64,12 @@ angular.module('PortfolioApp', ['ui.router','ui.bootstrap','ngMaterial', 'ngAnim
 		url: '/timeline',
 		templateUrl: 'js/app/views/timelineView.html',
 		controller: 'TimelineCtrl'
+	})
+	$stateProvider
+	.state('testing', {
+		url: '/testing',
+		templateUrl: 'js/app/views/testing.html',
+		controller: 'TestingCtrl'
 	});
 
 	$locationProvider.html5Mode(true);

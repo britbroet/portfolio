@@ -111,11 +111,11 @@ h2.intro_subtitle {
 }
 
 .nav_title {
-	font-size: 1.6em;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 3px;
     line-height: 1.1em;
+    letter-spacing: 3px;
+    font-size: 1.6em;
 }
 
 .brit {
@@ -123,6 +123,17 @@ h2.intro_subtitle {
     font-weight: 700;
     letter-spacing: 10px;
     font-size: 32px;
+}
+
+#logo:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.broetje {
+	letter-spacing: 3px;
+	font-size: 1.6em;
+	color: #000;
 }
 
 .navmenu {
@@ -203,48 +214,109 @@ h2.intro_subtitle {
 /* NEW CONTAINERS */
 
 .tile_project_container {
-    background-image: url('/img/RoundUp1.png');
     background-size: contain;
-    height: 440px;
-    width: 500px;
+    height: 400px;
+    width: 448px;
+    margin: 30px;
+    display: inline-block;
+    border-top: 5px solid #0288AD;
 }
 
-.tile_project_container:hover {
+.tile_project_container:hover .tile_content {
+/*    background-image: url('/img/RoundUp1.png');*/
+    background-size: contain;
+/*    height: 440px;
+    width: 500px;*/
+    visibility: visible;
+}
+
+#roundup.tile_project_container {
+    background-image: url('/img/RoundUp1.png');
+}
+
+#roundup.tile_project_container:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/img/RoundUp1.png');
 }
 
-#tile_content {
-	color: #fff;
-	/*display: flex; */
-	/*align-content: center;*/
-	justify-content: center;
-	text-align: center;
-    height: 440px;
-    width: 500px;
+#jquery_todo.tile_project_container {
+    background-image: url('/img/todo-list-teal.png');
 }
 
-#tile_content .icon_container {
+#jquery_todo.tile_project_container:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/img/todo-list-teal.png');
+}
+
+#vicegrip.tile_project_container {
+    background-image: url('/img/ViceGrip3.png');
+}
+
+#vicegrip.tile_project_container:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/img/ViceGrip3.png');
+}
+
+.vicegrip_hover {
+	font-weight: 800;
+	padding: 0 5px;
+	font-family: 'Raleway', sans-serif !important;
+	text-transform: uppercase;
+}
+
+.todo_hover {
+	font-family: 'Raleway', sans-serif !important;
+	text-transform: uppercase;
+}
+
+.progress_tracker_hover {
+	font-weight: 400;
+	color: white;
+	font-family: 'Oswald', sans-serif !important;
+	text-transform: uppercase;
+}
+
+.todo_hover {
+	font-family: 'Amatic SC', cursive !important;
+	font-weight: 700;
+}
+
+#progress_tracker.tile_project_container {
+    background-image: url('/img/ProgressTracker1.png');
+}
+
+#progress_tracker.tile_project_container:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/img/ProgressTracker1.png');
+}
+
+.tile_content {
+	color: #fff;
+	visibility: hidden;
+	text-align: center;
 	display: block;
 }
 
-#tile_content .icon {
+
+.tile_content .icon_container {
+	display: block;
+}
+
+.tile_content .icon {
 	font-size: 30px;
 	display: inline-block;
 	padding: 3px 5px;
+	cursor: pointer;
 }
 
-#tile_content .title {
-	padding-top: 150px;
-	display: block;
-	font-size: 60px !important;
+
+.tile_content .title {
+	margin: 150px auto 10px auto;
+	display: inline-block;
+	font-size: 4em !important;
 	font-family: 'Roboto Condensed', sans-serif !important;
-	margin-bottom: 10px;
 }
 
-#tile_content .description {
-	font-size: 24px;
+a.title, a.title:hover {
+	color: white;
+	text-decoration: none;
 }
-
 
 
 #projects .projects_container {
@@ -279,9 +351,10 @@ h2.intro_subtitle {
 }
 
 
-#projects .title {
-	font-size: 24px;
-	font-family: 'Source Code Pro', monospace; 
+
+
+.hover_logo {
+	max-width: 40px;
 }
 
 #projects .details_container {
@@ -432,7 +505,20 @@ h2.project_title {
 }
 */
 
+#contact_container {
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+}
 
+#contact_container .icon {
+	display: inline-block;
+}
+
+#contact_container > img {
+	max-width: 100px;
+}
 
 
 
@@ -458,6 +544,10 @@ h2.project_title {
 .copyright {
 	letter-spacing: 3px;
     font-size: .8em;
+}
+
+.contact_logo {
+	width: 20px;
 }
 
 

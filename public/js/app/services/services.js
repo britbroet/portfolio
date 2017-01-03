@@ -2,10 +2,15 @@ angular.module('PortfolioApp')
 .service('ProjectService', ['$http', function($http) {
   this.AllProjects = [ 
       {
-        name: 'Simple jQuery Todo List',
-        git: 'https://britbroet.github.io/jquery-todo-list/',
-        live: '',
-        image: '/img/todolist-screenshot.png',
+        name: 'Todo List',
+        id: 'jquery_todo',
+        info: '/projects/todolist',
+        git: 'https://github.com/britbroet/jquery-todo-list', 
+        live: 'https://britbroet.github.io/jquery-todo-list/',
+        image: '/img/todo-list-teal.png',
+        logo: '/img/todo-logo.png',
+        hover_title: 'ToDo List',
+        title_class: 'todo_hover',
         tech: {
           ajax: false,
           angular: false,
@@ -21,9 +26,14 @@ angular.module('PortfolioApp')
       },
       {
         name: 'Progress Tracker',
-        git: 'https://britbroet.github.io/progress-tracker/',
-        live: '',
-        image: '/img/statuscheck-preview.png',
+        id: 'progress_tracker',
+        info: '/projects/statuscheck',
+        git: 'https://github.com/britbroet/progress-tracker',
+        live: 'https://progresstracker.herokuapp.com',
+        image: '/img/ProgressTracker1.png',
+        logo: '/img/status-logo.png',
+        hover_title: 'STATUSCHECK',
+        title_class: 'progress_tracker_hover',
         tech: {
           ajax: false,
           angular: false,
@@ -39,9 +49,14 @@ angular.module('PortfolioApp')
       },
       {
         name: 'RoundUp',
+        id: 'roundup',
+        info: '/projects/roundup',
         git: 'https://britbroet.github.io/roundup/',
-        live: '',
+        live: 'http://b-roundup.herokuapp.com/',
         image: '/img/RoundUp1.png',
+        logo: '/img/lasso-logo.png',
+        hover_title: 'RoundUp',
+        title_class: 'roundup_hover',
         tech: {
           ajax: false,
           angular: true,
@@ -57,9 +72,14 @@ angular.module('PortfolioApp')
       },
       {
         name: 'ViceGrip',
+        id: 'vicegrip',
+        info: '/projects/vicegrip',
         git: 'https://britbroet.github.io/progress-tracker/',
-        live: '',
-        image: '/img/ViceGrip1.png',
+        live: 'http://b-vicegrip.herokuapp.com/',
+        image: '/img/ViceGrip3.png',
+        logo: '/img/vice-logo.png',
+        hover_title: 'ViceGrip',
+        title_class: 'vicegrip_hover',
         tech: {
           ajax: false,
           angular: false,
