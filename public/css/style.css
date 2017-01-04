@@ -393,7 +393,7 @@ a.title, a.title:hover {
 	height: 200px;
 }
 
-#projects .tech_container {
+#projects .tech_container, .tech_container {
 	background-color: #fff;
 	min-height: 50px;
 	display: flex;
@@ -402,12 +402,12 @@ a.title, a.title:hover {
 	justify-content: space-between;
 	padding: 0;
 	margin: 10px 10px;
-	background-color: #eee;
+	/*background-color: #eee;*/
 }
 
 
 
-#projects .tech_logo img {
+#projects .tech_logo img, .tech_logo img {
 	display: inline-block;
 	max-height: 20px;
 	padding: 0 4px;
