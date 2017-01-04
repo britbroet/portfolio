@@ -6,6 +6,7 @@ body {
 
 html {
 	height: 100%;
+	background-color: #fff;
 }
 
 a, a:hover {
@@ -197,6 +198,13 @@ h2.intro_subtitle {
     -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
 /*    animation:  mymove 5s infinite;
 }*/
+
+/* HOME */
+
+img.intro_image {
+	width: 200px;
+	border-radius: 100px;
+}
 
 /* PROJECTS PAGE */
 
