@@ -451,13 +451,19 @@ h2.project_title {
 	margin: 20px 0;
 }
 
+#resume .education_location {
+	font-weight: 300;
+	font-size: 18px;
+	font-family: 'Oswald', sans-serif;
+}
+
 #resume .position_title, .education_title {
 	font-size: 18px;
 	font-family: 'Oswald', sans-serif;
 	display: inline-block;
 }
 
-#resume .position_location, #resume .position_geo, #resume .position_duration, #resume .position_title {
+#resume .position_location, #resume .position_geo, #resume .position_duration, #resume .position_title, #resume .education_duration {
 	font-size: 18px;
 	font-family: 'Oswald', sans-serif;
 	display: inline-block;
@@ -626,3 +632,17 @@ h2.project_title {
 
 }
 
+@media (max-width: 465px) {
+
+	/* RESUME */
+	#resume .position_title {
+		display: block;
+	}
+
+	#resume .position_location {
+		display: block;
+		border-left: none;
+		padding-left: 0px;
+		margin-left: 0px;
+	}
+}
