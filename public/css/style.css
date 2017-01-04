@@ -438,6 +438,33 @@ h2.project_title {
 	width: 100px;
 }
 
+
+/* PROJECT DETAIL PAGE */
+
+.project_detail_title {
+	font-size: 60px;
+	text-align: center;
+    margin: 50px 0 30px 0;
+}
+
+
+/* VICEGRIP */
+#vice_grip .demo_container {
+	text-align: center;
+}
+
+#vice_grip .demo {
+	height: 400px;
+	width: 615px;
+} 
+
+
+
+
+
+/* RESUME PAGE */
+
+
 .resume_container {
 	max-width: 900px;
 	margin: 50px auto 100px auto;
@@ -644,10 +671,24 @@ h2.project_title {
 	.nav_container {
 	    margin: 20px 0 20px 0;
 	}
-
+	#vice_grip .demo {
+		height: 247px;
+		width: 410px;
+	} 
 }
 
 @media (max-width: 465px) {
+
+	/* PROJECT DETAIL PAGES*/
+
+	.project_detail_title {
+    	font-size: 36px;
+    }
+
+	#vice_grip .demo {
+		height: 200px;
+		width: 307px;
+	} 
 
 	/* RESUME */
 	#resume .position_title {
@@ -660,4 +701,5 @@ h2.project_title {
 		padding-left: 0px;
 		margin-left: 0px;
 	}
+
 }
