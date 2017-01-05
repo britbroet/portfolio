@@ -685,6 +685,15 @@ h2.project_title {
 
 @media (max-width: 465px) {
 
+	/* PROJECT PAGE */
+
+	.tile_project_container {
+	    height: 300px;
+	    width: 355px;
+	    margin: 30px -40px 15px -40px;
+	    display: block;
+	}
+
 	/* PROJECT DETAIL PAGES*/
 
 	.project_detail_title {
