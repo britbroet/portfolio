@@ -1,5 +1,111 @@
 <navigation></navigation>
 
-<h1 class="page_title">RoundUp</h1>
+<div id="roundup">
+
+	<h1 class="roundup_hover project_detail_title">RoundUp</h1>
+
+	<div class="demo_container">	
+		<img ng-src="/img/roundup-screenshot.jpg">
+<!-- 		<video class="demo" controls autoplay>
+		  <source src="/img/vicegrip-demo.mp4" type="video/mp4">
+		  <img ng-src="/img/vicegrip-demo.gif">
+		</video> -->
+	</div>
+
+	<div class="tech_container">
+		<div class="tech_logo not_used">
+			<img ng-src="/img/AJAX-logo.png">
+		</div>
+		<div class="tech_logo">
+			<img ng-src="/img/AngularJS-large.png">
+		</div>
+		<div class="tech_logo logo_only">
+			<a href="#"><img ng-src="/img/JS-logo.png" style="max-height: 30px;" title="JavaScript"></a>
+		</div>
+		<div class="tech_logo">
+			<img ng-src="/img/jquery-logo.png" style="max-height: 20px;">
+		</div>
+		<div class="tech_logo">
+			<img ng-src="/img/MongoDB-logo.png">
+		</div>
+		<div class="tech_logo">
+			<img ng-src="/img/NodeJS-logo.png">
+		</div>
+		<div class="tech_logo not_used">
+			<img ng-src="/img/postgresql-logo.png" style="max-height: 30px;">
+		</div>
+		<div class="tech_logo logo_only not_used">
+			<img ng-src="/img/rails-logo.png" style="max-height: 30px;">
+		</div>
+		<div class="tech_logo logo_only not_used">
+			<img ng-src="/img/ruby-logo.png" style="max-height: 30px;">
+		</div>
+	</div>
+
+	<div class="project_detail_info">
+		<div class="row">
+			<div class="col-xs-12 col-md-6">
+				<h2>WHAT</h2>
+				<p>RoundUp is an app that allows interviewers to track a candidate through an interview round. Users sign in and can add notes about questions asked of a candidate during the interview they participated in. This allows other interviewers to keep track of what questions have already been asked of a candidate, and to see other interviewers notes so far. Ultimately, with all interviewers' notes in one central location, the interview round page can serve as a great way to review the round.</p>
+			</div>
+			<div class="col-xs-12 col-md-2">
+				<h2>WHO</h2>
+				<p>This was a team project with three collaborators including myself.</p>
+			</div>
+			<div class="col-xs-12 col-md-2">
+				<h2>HOW</h2>
+				<p>RoundUp was built using <strong>NodeJS</strong>, <strong>Javascript</strong>, <strong>jQuery</strong>, <strong>AngularJS</strong>, and <strong>MongoDB</strong>.</p>
+			</div>
+			<div class="col-xs-12 col-md-2">
+				<h2>WHERE</h2>
+				<div style="margin: 12px 0 10px 0;">
+					<a ng-href="http://b-roundup.herokuapp.com/" target="_blank" class="btn btn-default">Live App</a>
+				</div>
+				<div>
+					<a ng-href="https://britbroet.github.io/roundup/" target="_blank" class="btn btn-default">GitHub Repo</a>
+				</div>
+			</div>
+		</div>
+		<div class="project_status">
+			<h2>CURRENT STATUS:</h2>
+			<p>Having only a week to complete this project initially, there was a lot of desired functionality we weren't able to get to, and that I'm now continuing to work on. This includes (but is not limited to):</p>
+
+			<ul>
+				<li>
+					Stronger information architecture/UX, and organization of site based on user role/type of task (resource section for HR to save candidates/positions/questions for future use vs. someone actively interviewing a candidate, setting up new round, or reviewing past interviews).
+				</li>
+				<li>
+					Ability to add new candidate and position (instead of picking from list of existing) in the new round setup process.
+				</li>
+				<li>
+					Ability to add/edit/remove interviews after new round is created (from round page).
+				</li>
+				<li>
+					Scoring functionality on interviewer form.
+				</li>
+				<li>
+					Ability to add new questions to interview round (not just pre-assigned ones based on position).
+				</li>
+				<li>
+					Misc notes section on interviewer form.
+				</li>
+				<li>
+					Button to share link to round with someone via email.
+				</li>
+				<li>
+					Ability to specify status of round, and option to archive when done.
+				</li>
+				<li>
+					[Bug] Update navigation to logged in view (currently requires refresh) automatically after user logs in.
+				</li>
+				<li>
+					[Stretch Goal] Implement multi-tenant auth for team accounts.
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+</div>
 
 <footer></footer>

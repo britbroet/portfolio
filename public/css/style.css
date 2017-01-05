@@ -465,7 +465,7 @@ h2.project_title {
     padding: 5px 15px;  
 }
 
-.project_status h2, .project_status p {
+.project_status h2, .project_status p, .project_status ul > li {
     text-align: left;
     font-family: monospace;
     text-decoration: none;
@@ -474,6 +474,12 @@ h2.project_title {
 .project_status h2 {
 	margin-top: 4px;
     font-size: 24px;
+}
+
+.project_status ul > li {
+	line-height: 13px;
+    margin-bottom: 5px;
+    font-size: 12px;
 }
 
 
