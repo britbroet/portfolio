@@ -394,15 +394,15 @@ a.title, a.title:hover {
 }
 
 #projects .tech_container, .tech_container {
-	background-color: #fff;
-	min-height: 50px;
-	display: flex;
-	position: relative;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0;
-	margin: 30px;
-	/*background-color: #eee;*/
+    background-color: #fff;
+    min-height: 50px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 700px;
+    margin: 20px auto 60px auto;
 }
 
 
@@ -450,6 +450,32 @@ h2.project_title {
 .project_detail_info {
     text-align: center;
 }
+
+.project_detail_info h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.project_status {
+	background-color: #efefef;
+    margin: 70px auto 0 auto;
+    max-width: 700px;
+    padding: 5px 15px;  
+}
+
+.project_status h2, .project_status p {
+    text-align: left;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+.project_status h2 {
+	margin-top: 4px;
+    font-size: 24px;
+}
+
+
+
 
 /* VICEGRIP */
 #vice_grip .demo_container {
