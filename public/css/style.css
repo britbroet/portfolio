@@ -447,6 +447,9 @@ h2.project_title {
     margin: 50px 0 30px 0;
 }
 
+.project_detail_info {
+    text-align: center;
+}
 
 /* VICEGRIP */
 #vice_grip .demo_container {
@@ -675,6 +678,9 @@ h2.project_title {
 		height: 247px;
 		width: 410px;
 	} 
+    .not_used {
+    	display: none;
+    }
 }
 
 @media (max-width: 465px) {
