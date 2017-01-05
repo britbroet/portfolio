@@ -3,14 +3,14 @@ angular.module('PortfolioApp', ['ui.router','ui.bootstrap','ngMaterial', 'ngAnim
 	$urlRouterProvider.otherwise('/'); // usually goes to a 404 route
 	$stateProvider
 	.state('home', {
-		url: '/home',
+		url: '/',
 		templateUrl: 'js/app/views/home.html'
 	})
-	$stateProvider
-	.state('welcome', {
-		url: '/',
-		templateUrl: 'js/app/views/welcome.html'
-	})
+	// $stateProvider
+	// .state('welcome', {
+	// 	url: '/',
+	// 	templateUrl: 'js/app/views/welcome.html'
+	// })
 	$stateProvider
 	.state('projects', {
 		url: '/projects',
