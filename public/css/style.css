@@ -38,13 +38,34 @@ h1.page_title {
     text-decoration: underline;
 }
 
+
 h1.intro_title {
-	text-align: right;
+	text-align: center;
 	text-transform: uppercase;
 }
 
 h2.intro_subtitle {
+	text-align: center;
+	margin: 70px 0 50px 0;
+}
+
+h3.intro_subtitle, h4.intro_subtitle {
 	text-align: right;
+	padding-right: 30px;
+}
+
+h4.intro_subtitle {
+	margin: 50px 0;
+}
+
+.intro_subtitle a {
+	color: #0288AD
+}
+
+.intro_subtitle a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	font-weight: bold;
 }
 
 .filter_container {
@@ -209,8 +230,8 @@ h2.intro_subtitle {
 /* HOME */
 
 img.intro_image {
-	width: 200px;
-	border-radius: 100px;
+	width: 300px;
+	border-radius: 150px;
 }
 
 /* PROJECTS PAGE */
