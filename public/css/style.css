@@ -287,27 +287,27 @@ img.intro_image {
 }
 
 #roundup.tile_project_container {
-    background-image: url('/img/RoundUp1.png');
+    background-image: url('/img/RoundUp1.jpg');
 }
 
 #roundup.tile_project_container:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/img/RoundUp1.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/img/RoundUp1.jpg');
 }
 
 #jquery_todo.tile_project_container {
-    background-image: url('/img/todo-list-teal.png');
+    background-image: url('/img/todo-list-teal.jpg');
 }
 
 #jquery_todo.tile_project_container:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/img/todo-list-teal.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/img/todo-list-teal.jpg');
 }
 
 #vicegrip.tile_project_container {
-    background-image: url('/img/ViceGrip3.png');
+    background-image: url('/img/ViceGrip3.jpg');
 }
 
 #vicegrip.tile_project_container:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/img/ViceGrip3.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/img/ViceGrip3.jpg');
 }
 
 .vicegrip_hover {
@@ -335,11 +335,11 @@ img.intro_image {
 }
 
 #progress_tracker.tile_project_container {
-    background-image: url('/img/ProgressTracker1.png');
+    background-image: url('/img/ProgressTracker1.jpg');
 }
 
 #progress_tracker.tile_project_container:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/img/ProgressTracker1.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/img/ProgressTracker1.jpg');
 }
 
 .tile_content {
