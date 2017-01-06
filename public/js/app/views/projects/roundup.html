@@ -4,12 +4,18 @@
 
 	<h1 class="roundup_hover project_detail_title">RoundUp</h1>
 
-	<div class="demo_container">	
-		<img ng-src="/img/roundup-screenshot.jpg">
-<!-- 		<video class="demo" controls autoplay>
-		  <source src="/img/vicegrip-demo.mp4" type="video/mp4">
-		  <img ng-src="/img/vicegrip-demo.gif">
-		</video> -->
+	<div class="embed-responsive embed-responsive-16by9 hidden-xs">	
+		<video class="embed-responsive-item hidden-xs" controls autoplay>
+		  <source src="/img/roundup-demo.mp4" type="video/mp4">
+		  <img ng-src="/img/roundup-demo.gif">
+		</video>
+	</div>
+
+	<div class="visible-xs-block" style="text-align: center;">
+		<a ng-href="/img/roundup-demo.mp4" target="_blank" class="btn btn-default">
+			View demo video
+		</a>
+		<img ng-src="/img/roundup-screenshot.jpg" style="margin-top: 30px;">
 	</div>
 
 	<div class="tech_container">
@@ -75,16 +81,31 @@
 					Stronger information architecture/UX, and organization of site based on user role/type of task (resource section for HR to save candidates/positions/questions for future use vs. someone actively interviewing a candidate, setting up new round, or reviewing past interviews).
 				</li>
 				<li>
+					[Bug] Fix mobile navigation.
+				</li>
+				<li>
+					Move new round process from homepage onto own page.
+				</li>
+				<li>
 					Ability to add new candidate and position (instead of picking from list of existing) in the new round setup process.
 				</li>
 				<li>
-					Ability to add/edit/remove interviews after new round is created (from round page).
+					Cancel button to exit setup process.
+				</li>
+				<li>
+					Ability to delete interviews in setup process, and add/edit/remove interviews after new round is created (from round page).
 				</li>
 				<li>
 					Scoring functionality on interviewer form.
 				</li>
 				<li>
 					Ability to add new questions to interview round (not just pre-assigned ones based on position).
+				</li>
+				<li>
+					Remove numbers from question list.
+				</li>
+				<li>
+					Ability to enter more candidate info, including ability to upload resume.
 				</li>
 				<li>
 					Misc notes section on interviewer form.

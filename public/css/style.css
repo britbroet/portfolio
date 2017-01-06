@@ -47,6 +47,11 @@ h2.intro_subtitle {
 	text-align: right;
 }
 
+.filter_container {
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+}
+
 .filter_button {
 	display: inline-block;
 }
@@ -217,7 +222,7 @@ img.intro_image {
     font-size: 13px;
     color: #777;
     padding: 5px 15px 1px 15px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     border-left: 3px solid #B08B0D;
 }
 
@@ -485,14 +490,14 @@ h2.project_title {
 
 
 
-/* VICEGRIP */
-#vice_grip .demo_container {
+/* DEMOS */
+#vice_grip .demo_container, #roundup .demo_container {
 	text-align: center;
 }
 
-#vice_grip .demo {
-	height: 400px;
-	width: 615px;
+#vice_grip .demo, #roundup .demo {
+	height: 500px;
+	width: 769px;
 } 
 
 
@@ -708,7 +713,7 @@ h2.project_title {
 	.nav_container {
 	    margin: 20px 0 20px 0;
 	}
-	#vice_grip .demo {
+	#vice_grip .demo, #roundup .demo {
 		height: 247px;
 		width: 410px;
 	} 
@@ -734,7 +739,15 @@ h2.project_title {
     	font-size: 36px;
     }
 
-	#vice_grip .demo {
+	.tech_container {
+		margin: 10px auto 20px auto;
+	}
+
+	.project_detail_info h2 {
+		font-size: 24px;
+	}
+
+	#vice_grip .demo, #roundup .demo {
 		height: 200px;
 		width: 307px;
 	} 

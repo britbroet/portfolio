@@ -11,13 +11,13 @@
 </div>
 
 	<div class="projects_controls hidden-xs">
-		<div class="view_container">
+		<div class="view_container" style="display: none;">
 			<div ng-click="projectView = 'tiled'" style="display: inline;" title="Tile view"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span></div>
 			<div ng-click="projectView = 'list'" style="display: inline;" title="List view"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span></div>
 		</div>
 		<div ng-init="showFilters = false">
 			<div class="filter_container">
-				<div ng-click="showFilters = !showFilters" style="display: inline; margin-left: 40px;" title="Filter by technology used"><span class="glyphicon glyphicon-filter" aria-hidden="true"></span></div>
+				<div ng-click="showFilters = !showFilters" style="display: inline; margin-left: 40px;" title="Filter by technology used"><span class="glyphicon glyphicon-filter" aria-hidden="true" style="margin-right: 2px;"></span>filter by tech used</div>
 			</div>
 		</div>
 	</div>
@@ -56,7 +56,7 @@
 		projects-list
 	</div>
 
-	<div ng-if="projectView === 'tiled'" style="margin-bottom: 400px;">
+	<div ng-if="projectView === 'tiled'" style="margin-bottom: 400px; margin-top: -30px;">
 
 <!-- 		<div id="projects_tiled">
 			<div ng-repeat="project in projects | orderBy : 'position'" class="animate-if" data-ng-if="((!js) || (project.tech.javascript == js)) && ((!jquery) || (project.tech.jquery == jquery)) && ((!angular) || (project.tech.angular == angular)) && ((!ajax) || (project.tech.ajax == ajax)) && ((!mongodb) || (project.tech.mongodb == mongodb)) && ((!node) || (project.tech.node == node)) && ((!postgres) || (project.tech.postgres == postgres)) && ((!rails) || (project.tech.rails == rails))" style="margin-bottom: 20px;">
