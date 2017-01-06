@@ -52,6 +52,7 @@ h2.intro_subtitle {
 h3.intro_subtitle, h4.intro_subtitle {
 	text-align: right;
 	padding-right: 30px;
+	line-height: 1.4em;
 }
 
 h4.intro_subtitle {
