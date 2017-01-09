@@ -1,5 +1,100 @@
 <navigation></navigation>
 
-<h1 class="page_title">StatusCheck</h1>
+<div id="progress_tracker">
+
+	<h1 class="progress_tracker_hover project_detail_title">StatusCheck</h1>
+
+	<div class="embed-responsive embed-responsive-16by9 hidden-xs">	
+		<video class="embed-responsive-item hidden-xs" controls autoplay>
+		  <source src="/img/statuscheck-demo.mp4" type="video/mp4">
+		  <img ng-src="/img/statuscheck-demo.gif">
+		</video>
+	</div>
+
+	<div class="visible-xs-block" style="text-align: center;">
+		<a ng-href="/img/statuscheck-demo.mp4" target="_blank" class="btn btn-default">
+			View demo video
+		</a>
+		<img ng-src="/img/statuscheck-preview.jpg" style="margin-top: 30px;">
+	</div>
+
+	<div class="tech_container">
+		<div class="tech_logo">
+			<img ng-src="/img/AJAX-logo.png">
+		</div>
+		<div class="tech_logo not_used">
+			<img ng-src="/img/AngularJS-large.png">
+		</div>
+		<div class="tech_logo logo_only">
+			<a href="#"><img ng-src="/img/JS-logo.png" style="max-height: 30px;" title="JavaScript"></a>
+		</div>
+		<div class="tech_logo">
+			<img ng-src="/img/jquery-logo.png" style="max-height: 20px;">
+		</div>
+		<div class="tech_logo not_used">
+			<img ng-src="/img/MongoDB-logo.png">
+		</div>
+		<div class="tech_logo">
+			<img ng-src="/img/NodeJS-logo.png">
+		</div>
+		<div class="tech_logo">
+			<img ng-src="/img/postgresql-logo.png" style="max-height: 30px;">
+		</div>
+		<div class="tech_logo logo_only not_used">
+			<img ng-src="/img/rails-logo.png" style="max-height: 30px;">
+		</div>
+		<div class="tech_logo logo_only not_used">
+			<img ng-src="/img/ruby-logo.png" style="max-height: 30px;">
+		</div>
+	</div>
+
+	<div class="project_detail_info">
+		<div class="row">
+			<div class="col-xs-12 col-md-6">
+				<h2>WHAT</h2>
+				<p>StatusCheck is an app that allows users to create and share task lists to keep others easily informed as to their progress.</p>
+			</div>
+			<div class="col-xs-12 col-md-2">
+				<h2>WHO</h2>
+				<p>Just me.</p>
+			</div>
+			<div class="col-xs-12 col-md-2">
+				<h2>HOW</h2>
+				<p>StatusCheck was built with <strong>JavaScript</strong>, <strong>jQuery</strong>, <strong>NodeJS</strong>, <strong>PostgreSQL</strong>, and uses the Twilio API to send text updates.</p>
+			</div>
+			<div class="col-xs-12 col-md-2">
+				<h2>WHERE</h2>
+				<div style="margin: 12px 0 10px 0;">
+					<a ng-href="https://progresstracker.herokuapp.com" target="_blank" class="btn btn-default">Live App</a>
+				</div>
+				<div>
+					<a ng-href="https://github.com/britbroet/progress-tracker" target="_blank" class="btn btn-default">GitHub Repo</a>
+				</div>
+			</div>
+		</div>
+		<div class="project_status">
+			<h2>CURRENT STATUS:</h2>
+			<ul>
+				<li>
+					Notification functionality currently disabled since I'm just using a trial account for the Twilio API. Might consider adding email notification in it's place, but not high priority at the moment.
+				</li>
+				<li>
+					[Bug] When editing a timeline, you can click the up/down arrows next to each item, which updates the order in the UI, and their position value in the database. However, since it's not updating surrounding items' position values in the database (for example, changing #1 to #2 if the current #2 is moved up to #1), it leads to relatively inaccurate values, and on refresh the new order may not be displayed (if 2+ items have same position value it will default to another sort order).
+				</li>
+				<li>
+					Mobile styling for navigation.
+				</li>
+				<li>
+					Better mobile styling for Twilio info modal. 
+				</li>
+				<li>
+					[Bug] 
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</div>
+
 
 <footer></footer>
