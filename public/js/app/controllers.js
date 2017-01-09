@@ -16,6 +16,7 @@ angular.module('PortfolioApp')
 		projectView = selection;
 		console.log('projectView: ', projectView);
 	};
+
  }])
 .controller('AboutCtrl', ['$scope', '$state', function($scope, $state) {
 

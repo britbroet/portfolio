@@ -611,6 +611,8 @@ h2.project_title {
 }
 */
 
+/* CONTACT PAGE */
+
 #contact_container {
     margin: 100px auto;
     display: flex;
@@ -627,6 +629,11 @@ h2.project_title {
 }
 
 
+/* ABOUT ME PAGE */
+
+#about_me {
+	text-align: center;
+}
 
 
 
