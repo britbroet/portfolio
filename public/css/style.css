@@ -56,7 +56,7 @@ h3.intro_subtitle, h4.intro_subtitle {
 }
 
 h4.intro_subtitle {
-	margin: 50px 0;
+	margin: 50px 0 0 0;
 }
 
 .intro_subtitle a {
@@ -228,6 +228,14 @@ h4.intro_subtitle {
 }*/
 
 /* HOME */
+.intro_row {
+	display: flex;
+	align-items: center;
+}
+
+.intro_image_container {
+	text-align: center;
+}
 
 img.intro_image {
 	width: 300px;
@@ -632,8 +640,8 @@ h2.project_title {
 
 /* ABOUT ME PAGE */
 
-#about_me {
-	text-align: center;
+#about_me img.camel {
+	padding: 20px;
 }
 
 
@@ -727,9 +735,11 @@ h2.project_title {
   opacity:1;
 }
 
+
 /* MOBILE STYLING */
 
 @media (max-width: 768px) {
+
 	.menuItem {
 	    display: block;
 	    margin-left: 0px;
@@ -742,6 +752,24 @@ h2.project_title {
 	.nav_container {
 	    margin: 20px 0 20px 0;
 	}
+
+	/* HOME */
+
+	h3.intro_subtitle, h4.intro_subtitle {
+		text-align: center;
+		padding-right: 0px;
+		margin-top: 40px;
+		line-height: 1.4em;
+	}
+	.intro_row {
+		display: block;
+	}
+	.intro_image_container {
+	    padding-top: 0px;
+	}
+
+	/* PROJECT DETAIL PAGE */
+
 	#vice_grip .demo, #roundup .demo {
 		height: 247px;
 		width: 410px;
@@ -749,6 +777,9 @@ h2.project_title {
     .not_used {
     	display: none;
     }
+
+	/* ABOUT */
+
 }
 
 @media (max-width: 465px) {
@@ -786,6 +817,7 @@ h2.project_title {
 	} 
 
 	/* RESUME */
+
 	#resume .position_title {
 		display: block;
 	}
@@ -795,6 +827,12 @@ h2.project_title {
 		border-left: none;
 		padding-left: 0px;
 		margin-left: 0px;
+	}
+
+	/* ABOUT */
+
+	#about_me img.camel {
+		padding: 20px 0 0 0;
 	}
 
 }
