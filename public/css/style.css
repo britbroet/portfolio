@@ -733,10 +733,10 @@ h2.project_title {
 	    display: block;
 	    margin-left: 0px;
 	    text-align: center;
-	    padding: 5px 0;
+	    padding: 5px 10px;
 	}
 	.menu_Item_active {
-	    margin: 2px;
+	    margin: -1px 2px 0 2px;
 	}
 	.nav_container {
 	    margin: 20px 0 20px 0;
@@ -790,6 +790,20 @@ h2.project_title {
 		border-left: none;
 		padding-left: 0px;
 		margin-left: 0px;
+	}
+
+}
+
+
+@media (max-width: 375px) {
+
+	/* PROJECT PAGE */
+
+	.tile_project_container {
+	    height: 285px;
+	    width: 337px;
+	    margin: 30px -40px 15px -40px;
+	    display: block;
 	}
 
 }

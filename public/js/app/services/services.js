@@ -35,7 +35,7 @@ angular.module('PortfolioApp')
         hover_title: 'STATUSCHECK',
         title_class: 'progress_tracker_hover',
         tech: {
-          ajax: false,
+          ajax: true,
           angular: false,
           auth: true,
           javascript: true,
